@@ -1,0 +1,97 @@
+insert all
+INTO admin (Id_admin, Nama, alamat, no_telp, password) values (6, 'Dona', 'Maluku', '666666666', '666')
+INTO admin (Id_admin, Nama, alamat, no_telp, password) values (7, 'Fidela', 'Papua', '777777777', '777')
+INTO admin (Id_admin, Nama, alamat, no_telp, password) values (8, 'Mifta', 'Ghana', '888888888', '888')
+INTO admin (Id_admin, Nama, alamat, no_telp, password) values (9, 'Kadir', 'Arab', '999999999', '999')
+INTO admin (Id_admin, Nama, alamat, no_telp, password) values (10, 'Sule', 'Bandung', '123456789', '000')
+select * from dual;
+
+insert into customer (Id_customer, Nama, alamat, no_telp, password) values (011, 'Badang', 'Malang', '14011', '121');
+insert into customer (Id_customer, Nama, alamat, no_telp, password) values (012, 'Leomord', 'Lumajang', '14022', '122');
+insert into customer (Id_customer, Nama, alamat, no_telp, password) values (013, 'Argus', 'Kertosono', '14033', '123');
+insert into customer (Id_customer, Nama, alamat, no_telp, password) values (014, 'Zilong', 'Jombang', '14344', '124');
+insert into customer (Id_customer, Nama, alamat, no_telp, password) values (015, 'Ling', 'Kediri', '14055', '125');
+
+insert into registrasi (no_registrasi, id_customer ,id_admin ,tgl_registrasi) values (11, 006, 6, to_date('01/01/2017','dd/mm/yyyy'));
+insert into registrasi (no_registrasi, id_customer ,id_admin ,tgl_registrasi) values (12, 007, 7, to_date('02/01/2017','dd/mm/yyyy'));
+insert into registrasi (no_registrasi, id_customer ,id_admin ,tgl_registrasi) values (13, 008, 8, to_date('03/01/2017','dd/mm/yyyy'));
+insert into registrasi (no_registrasi, id_customer ,id_admin ,tgl_registrasi) values (14, 009, 9, to_date('04/01/2017','dd/mm/yyyy'));
+insert into registrasi (no_registrasi, id_customer ,id_admin ,tgl_registrasi) values (15, 010, 10, to_date('05/01/2017','dd/mm/yyyy'));
+
+insert all
+into film (kategori, judul_film) values ('Horror', 'Inscidius')
+into film (kategori, judul_film) values ('Advanture', 'Jumanji')
+into film (kategori, judul_film) values ('Action', 'Fast Furious')
+into film (kategori, judul_film) values ('Comedy', 'Koala Kumal')
+into film (kategori, judul_film) values ('Kartun', 'Spongebob')
+select * from dual;
+
+insert all
+into jadwal (tanggal, judul_film, jam_tayang, jam_selesai) values (to_date('21/01/2017','dd/mm/yyyy'), 'Inscidius', TO_DATE('2017/01/21 19:00:00', 'yyyy/mm/dd hh24:mi:ss'),TO_DATE('2017/01/21 21:30:00', 'yyyy/mm/dd hh24:mi:ss'))
+into jadwal (tanggal, judul_film, jam_tayang, jam_selesai) values (to_date('22/01/2017','dd/mm/yyyy'), 'Jumanji', TO_DATE('2017/01/22 19:00:00', 'yyyy/mm/dd hh24:mi:ss'),TO_DATE('2017/01/22 21:30:00', 'yyyy/mm/dd hh24:mi:ss'))
+into jadwal (tanggal, judul_film, jam_tayang, jam_selesai) values (to_date('23/01/2017','dd/mm/yyyy'), 'Fast Furious', TO_DATE('2017/01/23 18:00:00', 'yyyy/mm/dd hh24:mi:ss'),TO_DATE('2017/01/23 21:00:00', 'yyyy/mm/dd hh24:mi:ss'))
+into jadwal (tanggal, judul_film, jam_tayang, jam_selesai) values (to_date('24/01/2017','dd/mm/yyyy'), 'Koala Kumal', TO_DATE('2017/01/24 14:15:00', 'yyyy/mm/dd hh24:mi:ss'),TO_DATE('2017/01/24 16:30:00', 'yyyy/mm/dd hh24:mi:ss'))
+into jadwal (tanggal, judul_film, jam_tayang, jam_selesai) values (to_date('25/01/2017','dd/mm/yyyy'), 'Spongebob', TO_DATE('2017/01/25 19:00:00', 'yyyy/mm/dd hh24:mi:ss'),TO_DATE('2017/01/25 21:30:00', 'yyyy/mm/dd hh24:mi:ss'))
+select * from dual;
+
+insert all
+into kursi (id_kursi, nama_kursi) values (012, 'C2')
+into kursi (id_kursi, nama_kursi) values (013, 'C3')
+into kursi (id_kursi, nama_kursi) values (014, 'C4')
+into kursi (id_kursi, nama_kursi) values (015, 'C5')
+into kursi (id_kursi, nama_kursi) values (016, 'D1')
+select * from dual;
+
+insert all
+into bioskop (kode_bioskop, id_kursi, judul_film, no_bioskop) values (051, 005, 'Inscidius', '1')
+into bioskop (kode_bioskop, id_kursi, judul_film, no_bioskop) values (052, 006, 'Inscidius', '1')
+into bioskop (kode_bioskop, id_kursi, judul_film, no_bioskop) values (053, 007, 'Inscidius', '1')
+into bioskop (kode_bioskop, id_kursi, judul_film, no_bioskop) values (054, 008, 'Inscidius', '1')
+into bioskop (kode_bioskop, id_kursi, judul_film, no_bioskop) values (055, 009, 'Inscidius', '1')
+select * from dual;
+
+insert all
+into tiket (id_tiket, id_kursi, tanggal, id_customer,judul_film, kode_bioskop,	stock, harga) values (11, 011, to_date('21/01/2017','dd/mm/yyyy'), 005, 'Inscidius', 051, '10', '40000')
+into tiket (id_tiket, id_kursi, tanggal, id_customer,judul_film, kode_bioskop,	stock, harga) values (12, 012, to_date('21/01/2017','dd/mm/yyyy'), 006, 'Inscidius', 052, '10', '40000')
+into tiket (id_tiket, id_kursi, tanggal, id_customer,judul_film, kode_bioskop,	stock, harga) values (13, 013, to_date('21/01/2017','dd/mm/yyyy'), 008, 'Inscidius', 053, '10', '40000')
+into tiket (id_tiket, id_kursi, tanggal, id_customer,judul_film, kode_bioskop,	stock, harga) values (14, 014, to_date('21/01/2017','dd/mm/yyyy'), 009, 'Inscidius', 054, '10', '40000')
+into tiket (id_tiket, id_kursi, tanggal, id_customer,judul_film, kode_bioskop,	stock, harga) values (15, 015, to_date('21/01/2017','dd/mm/yyyy'), 010, 'Inscidius', 055, '10', '40000')
+select * from dual;
+
+insert all
+into transaksi (id_transaksi, id_admin, id_customer, id_tiket, tgl_pesan, jumlah, total_harga) values (11, 6, 011, 11, to_date('11/01/2017','dd/mm/yyyy'), '2', '80000')
+into transaksi (id_transaksi, id_admin, id_customer, id_tiket, tgl_pesan, jumlah, total_harga) values (12, 7, 012, 12, to_date('12/01/2017','dd/mm/yyyy'), '1', '40000')
+into transaksi (id_transaksi, id_admin, id_customer, id_tiket, tgl_pesan, jumlah, total_harga) values (13, 8, 013, 13, to_date('13/01/2017','dd/mm/yyyy'), '3', '120000')
+into transaksi (id_transaksi, id_admin, id_customer, id_tiket, tgl_pesan, jumlah, total_harga) values (14, 9, 014, 14, to_date('14/01/2017','dd/mm/yyyy'), '4', '160000')
+into transaksi (id_transaksi, id_admin, id_customer, id_tiket, tgl_pesan, jumlah, total_harga) values (15, 10, 015, 15, to_date('15/01/2017','dd/mm/yyyy'), '1', '40000')
+select * from dual;
+
+SELECT id_transaksi,max (jumlah) as terbanyak, min (jumlah) as terendah FROM transaksi group by id_transaksi;
+
+SELECT id_transaksi,count (jumlah) as banyak_transaksi FROM transaksi WHERE id_transaksi > 2 AND id_tiket = 4 OR id_tiket = 5 group by id_transaksi;
+
+SELECT id_transaksi,avg (jumlah) as rata_rata FROM transaksi group by id_transaksi;
+
+SELECT id_transaksi, (SELECT SUM(jumlah) FROM transaksi WHERE transaksi.id_transaksi = transaksi.id_transaksi) as total_pembayaran from transaksi where id_transaksi = 4; 
+
+select id_tiket, tgl_pesan, max (jumlah) as terbanyak, min (jumlah) as terendah from transaksi group by id_tiket, tgl_pesan;
+
+select id_transaksi, tgl_pesan, count(id_transaksi) as banyak_transaksi from transaksi where id_transaksi > 1 AND id_transaksi = 4 OR id_tiket = 5 group by id_transaksi, tgl_pesan;
+
+select id_transaksi, (select sum(jumlah) as total_transaksi from transaksi)
+as total_transaksi from transaksi;
+
+select id_transaksi, (select avg(jumlah) as rata2_transaksi from transaksi)
+as rata2_transaksi from transaksi;
+
+select id_transaksi, (select avg(jumlah) as rata2_transaksi from transaksi)
+as rata2_transaksi from transaksi group by id_transaksi;
+
+select id_transaksi from transaksi where id_transaksi < (select sum(id_transaksi) as data from transaksi);
+
+select id_transaksi,(select max(jumlah) from transaksi
+where id_transaksi < (select sum(jumlah) from transaksi
+where id_transaksi < (select avg(jumlah) from transaksi))) as jumlah_terbanyak from transaksi;
+
+
+

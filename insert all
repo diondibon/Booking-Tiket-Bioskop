@@ -1,0 +1,84 @@
+insert all
+into Pegawai_06833 (Id_Pegawai, Nama_Depan, Nama_Belakang, Tanggal_Lahir, Alamat, Kode_Pos, No_Telp) values (1, 'Bejo', 'Subejo', to_date('01/10/1998','dd/mm/yyyy'), 'Boboh', 69198, '123456789')
+into Pegawai_06833 (Id_Pegawai, Nama_Depan, Nama_Belakang, Tanggal_Lahir, Alamat, Kode_Pos, No_Telp) values (2, 'Budi', 'Subakti', to_date('25/01/1997','dd/mm/yyyy'), 'Madura', 6971, '234567891')
+into Pegawai_06833 (Id_Pegawai, Nama_Depan, Nama_Belakang, Tanggal_Lahir, Alamat, Kode_Pos, No_Telp) values (3, 'Bakti', 'Sebakti', to_date('08/01/1995','dd/mm/yyyy'), 'Sidoarjo', 6916, '345678912')
+into Pegawai_06833 (Id_Pegawai, Nama_Depan, Nama_Belakang, Tanggal_Lahir, Alamat, Kode_Pos, No_Telp) values (4, 'Rini', 'Arini', to_date('06/11/1998','dd/mm/yyyy'), 'Rungkut', 67911, '456789123')
+into Pegawai_06833 (Id_Pegawai, Nama_Depan, Nama_Belakang, Tanggal_Lahir, Alamat, Kode_Pos, No_Telp) values (5, 'Beni', 'Pratama', to_date('31/05/1998','dd/mm/yyyy'), 'Sukolilo', 6901, '567891234')
+select 1 from dual;
+
+insert all
+into Pelanggan_06833 (Id_Pelanggan, Nama_Depan, Nama_Belakang, Tanggal_Lahir, Alamat, Kode_Pos, No_Telp) values (1, 'Tomy', 'Maulana', to_date('31/10/1998','dd/mm/yyyy'), 'Lombok', 6919, '123456789')
+into Pelanggan_06833 (Id_Pelanggan, Nama_Depan, Nama_Belakang, Tanggal_Lahir, Alamat, Kode_Pos, No_Telp) values (2, 'Indah', 'Nuraini', to_date('25/01/1999','dd/mm/yyyy'), 'Madura', 6971, '123456789')
+into Pelanggan_06833 (Id_Pelanggan, Nama_Depan, Nama_Belakang, Tanggal_Lahir, Alamat, Kode_Pos, No_Telp) values (3, 'Abdul', 'Falah', to_date('08/01/1994','dd/mm/yyyy'), 'Sidoarjo', 6916, '123456789')
+into Pelanggan_06833 (Id_Pelanggan, Nama_Depan, Nama_Belakang, Tanggal_Lahir, Alamat, Kode_Pos, No_Telp) values (4, 'Reno', 'Ubaidillah', to_date('06/11/1998','dd/mm/yyyy'), 'Juppiter', 6911, '123456789')
+into Pelanggan_06833 (Id_Pelanggan, Nama_Depan, Nama_Belakang, Tanggal_Lahir, Alamat, Kode_Pos, No_Telp) values (5, 'Arizal', 'Suhartono', to_date('31/05/1998','dd/mm/yyyy'), 'Pluto', 6901, '123456789')
+select 1 from dual;
+
+insert all
+into Kurir_06833 (Id_Kurir, Nama_Perusahaan, No_Telp) values (1, 'Indomart', '123456789')
+into Kurir_06833 (Id_Kurir, Nama_Perusahaan, No_Telp) values (2, 'Alfamart', '234567891')
+into Kurir_06833 (Id_Kurir, Nama_Perusahaan, No_Telp) values (3, 'Giant', '345678912')
+into Kurir_06833 (Id_Kurir, Nama_Perusahaan, No_Telp) values (4, 'Transmart', '456789123')
+into Kurir_06833 (Id_Kurir, Nama_Perusahaan, No_Telp) values (5, 'Superindo', '567891234')
+select 1 from dual;
+
+insert all
+into Pemasok_06833 (Id_Pemasok, Nama_Perusahaan, Alamat, Kode_Pos, No_Telp) values (1, 'DistriIndomart', 'Lombok', 6919, '123456789')
+into Pemasok_06833 (Id_Pemasok, Nama_Perusahaan, Alamat, Kode_Pos, No_Telp) values (2, 'DistriAlfamart', 'Madura', 6971, '234567891')
+into Pemasok_06833 (Id_Pemasok, Nama_Perusahaan, Alamat, Kode_Pos, No_Telp) values (3, 'DistriGiant', 'Sidoarjo', 6916, '345678912')
+into Pemasok_06833 (Id_Pemasok, Nama_Perusahaan, Alamat, Kode_Pos, No_Telp) values (4, 'DistriTransmart', 'Juppiter', 6911, '456789123')
+into Pemasok_06833 (Id_Pemasok, Nama_Perusahaan, Alamat, Kode_Pos, No_Telp) values (5, 'DistriSuperindo', 'Pluto', 6901, '567891234')
+select 1 from dual;
+
+insert into Kategori_06833 (Id_Kategori, Nama_Kategori) values (1, 'Makanan');
+insert into Kategori_06833 (Id_Kategori, Nama_Kategori) values (2, 'Minuman');
+insert into Kategori_06833 (Id_Kategori, Nama_Kategori) values (3, 'Buah-Sayur');
+insert into Kategori_06833 (Id_Kategori, Nama_Kategori) values (4, 'Electronik');
+insert into Kategori_06833 (Id_Kategori, Nama_Kategori) values (5, 'Baju');
+
+insert all
+into Produk_06833 (Id_Produk, Id_Pemasok, Id_Kategori, Nama_Produk, Harga_Satuan, Stok_Produk) values (1, 1, 1, 'Indomie', '2500', '50')
+into Produk_06833 (Id_Produk, Id_Pemasok, Id_Kategori, Nama_Produk, Harga_Satuan, Stok_Produk) values (2, 2, 2, 'Marimas', '2000', '40')
+into Produk_06833 (Id_Produk, Id_Pemasok, Id_Kategori, Nama_Produk, Harga_Satuan, Stok_Produk) values (3, 3, 3, 'Jeruk', '5000', '100')
+into Produk_06833 (Id_Produk, Id_Pemasok, Id_Kategori, Nama_Produk, Harga_Satuan, Stok_Produk) values (4, 4, 4, 'Samsung', '8000000', '35')
+into Produk_06833 (Id_Produk, Id_Pemasok, Id_Kategori, Nama_Produk, Harga_Satuan, Stok_Produk) values (5, 5, 5, 'Supreme', '35000', '55')
+select 1 from dual;
+
+insert all
+into Pemesanan_06833 (Id_Pemesanan, Id_Pelanggan, Id_Pegawai, Id_Kurir, Tanggal_Pemesanan, Tanggal_Pengiriman, Alamat_Pengiriman, Harga_total) values (1, 1, 1, 1, to_date('01/01/2017','dd/mm/yyyy'), to_date('02/01/2017','dd/mm/yyyy'), 'Boboh', '6000')
+into Pemesanan_06833 (Id_Pemesanan, Id_Pelanggan, Id_Pegawai, Id_Kurir, Tanggal_Pemesanan, Tanggal_Pengiriman, Alamat_Pengiriman, Harga_total) values (2, 2, 2, 2, to_date('02/02/2017','dd/mm/yyyy'), to_date('03/02/2017','dd/mm/yyyy'), 'Rungkut', '50000')
+into Pemesanan_06833 (Id_Pemesanan, Id_Pelanggan, Id_Pegawai, Id_Kurir, Tanggal_Pemesanan, Tanggal_Pengiriman, Alamat_Pengiriman, Harga_total) values (3, 3, 3, 3, to_date('03/03/2017','dd/mm/yyyy'), to_date('04/03/2017','dd/mm/yyyy'), 'Sukolilo', '53000')
+into Pemesanan_06833 (Id_Pemesanan, Id_Pelanggan, Id_Pegawai, Id_Kurir, Tanggal_Pemesanan, Tanggal_Pengiriman, Alamat_Pengiriman, Harga_total) values (4, 4, 4, 4, to_date('04/04/2017','dd/mm/yyyy'), to_date('04/03/2017','dd/mm/yyyy'), 'Sukolilo', '100000')
+into Pemesanan_06833 (Id_Pemesanan, Id_Pelanggan, Id_Pegawai, Id_Kurir, Tanggal_Pemesanan, Tanggal_Pengiriman, Alamat_Pengiriman, Harga_total) values (5, 5, 5, 5, to_date('05/05/2017','dd/mm/yyyy'), to_date('05/06/2017','dd/mm/yyyy'), 'Sukolilo', '200000')
+select 1 from dual;
+
+insert all
+into Detail_Pemesanan_06833 (Id_Produk, Id_Pemesanan, Jumlah, Diskon) values ('1', '1', '1', '10')
+into Detail_Pemesanan_06833 (Id_Produk, Id_Pemesanan, Jumlah, Diskon) values ('2', '2', '2', '20')
+into Detail_Pemesanan_06833 (Id_Produk, Id_Pemesanan, Jumlah, Diskon) values ('3', '3', '3', '30')
+into Detail_Pemesanan_06833 (Id_Produk, Id_Pemesanan, Jumlah, Diskon) values ('4', '4', '4', '40')
+into Detail_Pemesanan_06833 (Id_Produk, Id_Pemesanan, Jumlah, Diskon) values ('5', '5', '5', '50')
+select 1 from dual;
+
+select * from Pegawai_06833;
+
+UPDATE Pegawai_06833
+SET nama_depan = 'Kim',
+nama_belakang = 'Jisoo'
+WHERE id_pegawai = 1;
+
+UPDATE Pegawai_06833
+SET nama_depan = 'Lee',
+nama_belakang = 'Kurniawan'
+WHERE id_pegawai = 2;
+
+select * from detail_pemesanan_06833;
+
+DELETE FROM detail_pemesanan_06833
+WHERE id_produk = 4;
+
+DELETE FROM detail_pemesanan_06833
+WHERE id_produk = 5;
+
+SELECT kode_pos, alamat, no_telp, tanggal_lahir from pegawai_06833
+WHERE nama_depan LIKE '%a%' AND nama_belakang LIKE '%e%' AND id_pegawai < 5;
